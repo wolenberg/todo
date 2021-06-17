@@ -1,0 +1,19 @@
+img{
+    height: 3rem;
+}
+
+.header{
+    justify-content: center;
+    height: 10%;
+}
+
+spam{
+    display: flex;
+    align-items: center;
+}
+
+h1{
+    padding-left: 1.2rem;
+    color: rgb(245, 239, 239);
+    text-shadow: black 0.1em 0.1em 0.2em
+}

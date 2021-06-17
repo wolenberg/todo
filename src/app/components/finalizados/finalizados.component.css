@@ -1,0 +1,44 @@
+.container{
+    width: 85%;
+    margin: auto;
+
+}
+h1{
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: 600;
+    color: rgb(37, 37, 37);
+    text-shadow: rgb(179, 175, 175) 0.1em 0.1em 0.2em
+}
+
+
+.content{
+    width: 100%;
+}
+
+
+p{
+    text-align: end;
+    font-weight: 600;
+    color: rgb(51, 51, 51);
+    padding-bottom: 0;
+
+}
+mat-card{
+    margin-top: .8rem;
+    padding: .2rem;
+}
+
+.actions{
+    text-align: end;
+}
+
+.actions button{
+    margin: .5rem;
+}
+
+.badge button {
+    margin: auto;
+    margin-top: 1rem;
+    width: 100%;
+}

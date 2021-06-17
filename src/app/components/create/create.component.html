@@ -1,0 +1,32 @@
+<form>
+    <h1>Criando um Novo To-Do</h1>
+    <p>
+        <mat-form-field class="data-finalizar" appearance="fill">
+          <mat-label>Selecione a Data</mat-label>
+          <input [(ngModel)]="todo.dataParaFinalizar" name="todo.dataParaFinalizar" matInput [matDatepicker]="dp3" disabled>
+          <mat-datepicker-toggle matSuffix [for]="dp3"></mat-datepicker-toggle>
+          <mat-datepicker #dp3 disabled="false"></mat-datepicker>
+        </mat-form-field>
+      </p>
+
+      <div class="forms">
+        <mat-form-field class="form">
+            <mat-label>Título</mat-label>
+            <input [(ngModel)]="todo.titulo" name="todo.titulo" [formControl]="titulo" required type="text" maxlength="100" matInput placeholder="Reunião com Gerente">
+            <mat-error *ngIf="titulo.invalid"> {{ getMessage() }}</mat-error>
+          </mat-form-field>
+    
+          <mat-form-field class="form">
+            <mat-label>Descrição</mat-label>
+            <input [(ngModel)]="todo.descricao" name="todo.descricao" matInput placeholder="Reunião para debater melhorias">
+          </mat-form-field>
+      </div>
+
+      <div class="buttons">
+          
+        <button (click)="create()" [disabled]="getMessage()" mat-stroked-button color="primary">Criar</button>
+        <button (click)="cancel()" mat-stroked-button color="warn">Cancelar</button>
+
+      </div>
+
+</form>
